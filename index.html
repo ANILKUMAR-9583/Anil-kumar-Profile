@@ -2,15 +2,218 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI-Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"&gt;
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot; rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js&quot; integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Responsive Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+ 
+   <!-- Other meta tags and stylesheets -->
+  
+    <!-- Add the following script tags for Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- Add jQuery as Typed.js depends on it -->
+  <script>
+    
+  document.addEventListener('DOMContentLoaded', function () {
+    var typed = new Typed(".typing", {
+      strings: ["Developer", "Designer", "Freelancer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    });
+  });
+
+  </script>
 </head>
-<body class="container-fluid">
-    <h1>UI-Developer</h1>
-    <img src="public/images/mans-fashion.jpeg" width="300" height="300">
-    <p>My Skills : HTML , CSS, Bootstrap..</p>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">PORTFOLIO</a>
+ 
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#portfolio">Designs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- Home -->
+ 
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#"><i class='bi bi-linkedin'></i></a>
+            <a href="#"><i class='bi bi-twitter' ></i></a>
+            <a href="#"><i class='bi bi-instagram' ></i></a>
+            <a href="#"><i class='bi bi-facebook' ></i></a>
+
+        </div>
+        <div class="home-img">
+            <img src="../public/images/pic3.jpg"  alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Biswajit...</h1>
+            <p >A <i class="typing"></i></p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+ 
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <!-- About Content -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="../public/images/pic4.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>
+                    I am 21 year old, Bsc student studied at UNS Mahavidyalaya Jajpur,
+                    I really enjoy solving problems as well as Designing Faster Interactive UI. I can't stop learning new
+                    things; the more, the better.
+                  </p>
+                <div class="information">
+                    <!-- Box 1 -->
+                    <div class="info-box">
+                        <i class="bi bi-person-fill"></i>
+                        <span>Biswajit Dash</span>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="info-box">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+91 8917381983</span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="info-box">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>dashbiswajit45@gmail.com</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Download Cv</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <!-- Skills Content -->
+        <div class="skills-container">
+            <div class="bars">
+                <!-- Box 1 -->
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>95%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <!-- Box 2 -->
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <!-- Box 3 -->
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <!-- Box 4 -->
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="../public/images/project4.jpg" alt="">
+            </div>
+        </div>
+ 
+    </section>
+    
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Projects</h2>
+            <span>Our Projects</span>
+        </div>
+        <div class="services-content">
+            <!-- Box 1 -->
+            <div class="services-box">
+                <i class="bi bi-xbox"></i>
+                <h3>Fakestore API</h3>
+                <a href="../fakestoreapi.html">Live Preview</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="services-box">
+                <i class="bi bi-calculator-fill" ></i>
+                <h3>BMI Calculator</h3>
+                <a href="../bmi-calaculator.html">Live Preview</a>
+            </div>
+           
+    </section>
+    
+    <!-- Project Shows -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>Designs</h2>
+            <span>Our Recent Work</span>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-img">
+                <img src="../public/images/177755560-47df006f-27da-4fb5-8472-8464dea1bbad.png" alt="">
+            </div>
+            <div class="portfolio-img">
+                <img src="../public/images/bmi-cal2.jpg" alt="">
+            </div>
+            <div class="portfolio-img">
+                <img src="../public/images/landkit.jpg" alt="">
+            </div>
+            
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="button" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Create By <a href="#">CodeWithLikun</a> | All Right Reserved.</p>
+    </div>
+ 
+ 
+ 
+    <!-- Link To JS -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
